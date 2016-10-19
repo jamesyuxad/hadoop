@@ -199,7 +199,10 @@ public class DistCpUtils {
                               CopyListingFileStatus srcFileStatus,
                               EnumSet<FileAttribute> attributes,
                               boolean preserveRawXattrs) throws IOException {
-
+	if(true){
+		return;
+	}
+	
     FileStatus targetFileStatus = targetFS.getFileStatus(path);
     String group = targetFileStatus.getGroup();
     String user = targetFileStatus.getOwner();
